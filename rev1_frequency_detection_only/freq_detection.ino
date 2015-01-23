@@ -35,6 +35,7 @@ void loop() {
   Timer3.stop(); // stop sampling so that the data structure will be stable
   int period = autoCorrelateFrequency(&sampleQueue);
   Serial.println(period);
+  printQueue(&sampleQueue);
   outputPulseTimer.changeTimerInterval(0, period);
   newSamples = 0;
   Timer3.start();

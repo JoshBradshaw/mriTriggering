@@ -16,4 +16,4 @@ void beginIter(circularQueue_t *theQueue);
 int getSample(circularQueue_t *theQueue, int idx);
 
 // testing code
-void printQueue(circularQueue_t *theQueue);
+//void printQueue(circularQueue_t *theQueue);

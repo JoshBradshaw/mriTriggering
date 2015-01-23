@@ -28,13 +28,13 @@ int getSample(circularQueue_t *theQueue, int idx) {
 	return theQueue->data[(theQueue->first + idx)%MAX_ITEMS];
 }
 
-// Testing code (commented out to save Arduino storage)
-void printQueue(circularQueue_t *theQueue) {
-  for(int ii=0; ii<theQueue->validItems; ii++) {
-    int val = getSample(theQueue, ii);
-    printf("sample [%d]: %d \n", ii, val);
-  }
-}
+//// Testing code (commented out to save Arduino storage)
+// void printQueue(circularQueue_t *theQueue) {
+//   for(int ii=0; ii<theQueue->validItems; ii++) {
+//     int val = getSample(theQueue, ii);
+//     printf("sample [%d]: %d \n", ii, val);
+//   }
+// }
 
 
 //int main(void) {
